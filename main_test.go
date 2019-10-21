@@ -106,10 +106,11 @@ func launchDriver(numberGames int) {
 // Launch the driver and after the achievements system
 func TestAchievements(t *testing.T) {
 
-	launchDriver(100)
+	launchDriver(rand.Intn(1500))
 	runAchievements(players)
 
 	for _, player := range players {
+		fmt.Println(player.Games[1].Statistics)
 		fmt.Println(player.Achievements)
 	}
 
