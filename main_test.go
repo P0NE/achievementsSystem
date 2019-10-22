@@ -110,7 +110,6 @@ func TestAchievements(t *testing.T) {
 	runAchievements(players)
 
 	for _, player := range players {
-		fmt.Println(player.Games[1].Statistics)
 		fmt.Println(player.Achievements)
 	}
 
