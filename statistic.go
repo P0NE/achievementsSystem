@@ -1,5 +1,6 @@
 package main
 
+// Structure representation of all statistics
 type statistic struct {
 	AttackAttempt    int
 	HitNumber        int
